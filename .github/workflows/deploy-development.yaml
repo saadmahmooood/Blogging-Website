@@ -11,7 +11,7 @@ jobs:
         uses: actions/checkout@v4 
       - name: Build Website With Parcel 
         run: |
-          npx parcel build "./src/home.html" --dist-dir "./dev" --public-url "./" || echo "No files to build yet"
+          npx parcel build "./src/index.html" --dist-dir "./dev" --public-url "./" || echo "No files to build yet"
       - name: Upload Build Artifacts
         uses: actions/upload-pages-artifact@v3
         with:
